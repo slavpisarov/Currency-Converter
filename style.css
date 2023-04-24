@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(104, 43, 226);
+}
+.wrapper{
+    width: 400px;
+    padding: 30px;
+    border-radius: 7px;
+    background: whitesmoke;
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #4b4949;
+}
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid rgb(133, 94, 213);
+}
+form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-list .select-box{
+    display: flex;
+    height: 45px;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4b4949;
+    border-radius: 5px;
+}
+.select-box select{
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+/* .select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+    background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb{
+    background: #4b4949;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+} */
+.select-box img{
+    max-width: 25px;
+}
+.select-box{
+    background: white;
+}
+.drop-list .icon{
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 30px;
+}
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+
+form button{
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: rgb(104, 43, 226);
+}
